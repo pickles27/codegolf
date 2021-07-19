@@ -19,4 +19,4 @@ export const mockSubmissions = [
     author: 'Dart42',
     prompt: 'bleh',
   },
-]
+];
