@@ -1,8 +1,14 @@
 .card {
-  border: 1px solid black;
-  padding: 30px;
+  background: white;
+  box-shadow: 0px 0px 42px 1px var(--main-color);
+  padding: var(--spacing-med);
+  border-radius: 4px;
 }
 
-.card h1 {
+.card > * {
   margin: 0;
+}
+
+.card > :not(:last-child) {
+  margin-bottom: var(--spacing-small);
 }
