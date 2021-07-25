@@ -1,8 +1,8 @@
 import React from 'react';
 import { PreviewCard } from '../PreviewCard'
 
-export const NewsFeed = () => (
+export const NewsFeed = ({submissions}) => (
   <div>
-    {({submissions}) => submissions.map(submission => <PreviewCard key={submission._id} {...submission} />)}
+    {submissions.map(submission => <PreviewCard key={submission._id} {...submission} />)}
   </div>
 )
