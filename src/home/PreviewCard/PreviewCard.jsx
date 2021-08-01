@@ -7,7 +7,7 @@ export const PreviewCard = ({
     title,
 }) => <div className="card">
     <h1>{title}</h1>
-    <h4>{author}</h4>
-    <p>{prompt}</p>
+    <h2>{author}</h2>
+    <p className="truncate">{prompt}</p>
     <button>Challenge</button>
 </div>;

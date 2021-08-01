@@ -1,0 +1,7 @@
+.feed {
+  padding: var(--spacing-small) var(--spacing-large);
+}
+
+.feed :not(:last-child) {
+  margin-bottom: var(--spacing-small)
+}

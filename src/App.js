@@ -1,6 +1,6 @@
-import './App.css';
 import { NewsFeed } from './home/NewsFeed/NewsFeed';
-import { mockSubmissions } from './mockData'
+import { mockSubmissions } from './mockData';
+import './App.css';
 
 function App() {
   return (

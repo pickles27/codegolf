@@ -1,3 +1,20 @@
+:root {
+  --main-color: #242323;
+  --spacing-large: 15%;
+  --spacing-med: 5%;
+  --spacing-small: 3%;
+}
+
 .App {
-  text-align: center;
+  color: var(--main-color);
+  background-image: url('https://www.golf.com/wp-content/uploads/2019/03/how-many-dimples-on-a-golf-ball-960x540.jpg');
+  background-color: lightgrey;
+  background-size: cover;
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
