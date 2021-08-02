@@ -1,7 +1,3 @@
-.feed {
-  overflow: scroll;
-}
-
 .feed :not(:last-child) {
   margin-bottom: var(--spacing-small)
 }
