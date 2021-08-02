@@ -1,5 +1,5 @@
 .feed {
-  padding: var(--spacing-small) var(--spacing-large);
+  overflow: scroll;
 }
 
 .feed :not(:last-child) {

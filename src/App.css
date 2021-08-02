@@ -3,11 +3,12 @@
   --spacing-large: 15%;
   --spacing-med: 5%;
   --spacing-small: 3%;
+  --nav-height: 4em;
 }
 
 .App {
   color: var(--main-color);
-  background-image: url('https://www.golf.com/wp-content/uploads/2019/03/how-many-dimples-on-a-golf-ball-960x540.jpg');
+  background: url('https://www.golf.com/wp-content/uploads/2019/03/how-many-dimples-on-a-golf-ball-960x540.jpg') no-repeat center center fixed;
   background-color: lightgrey;
   background-size: cover;
 }

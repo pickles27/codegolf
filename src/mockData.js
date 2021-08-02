@@ -23,4 +23,16 @@ export const mockSubmissions = [
     prompt: 'bleh',
     _id: '4',
   },
+  {
+    title: 'haahhahahahhahahah',
+    author: 'Dart42',
+    prompt: 'bleep',
+    _id: '5',
+  },
+  {
+    title: 'lol',
+    author: 'Dart42',
+    prompt: 'bloop',
+    _id: '6',
+  },
 ];
