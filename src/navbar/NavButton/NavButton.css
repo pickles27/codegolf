@@ -7,7 +7,7 @@
   border-radius: 4px;
   height: calc(var(--nav-height) - 1.2em);
   width: 8em;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .navButton svg {
