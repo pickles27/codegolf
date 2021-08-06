@@ -1,0 +1,17 @@
+.navButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 4px;
+  height: calc(var(--nav-height) - 1.2em);
+  width: 8em;
+  cursor: pointer;
+}
+
+.navButton svg {
+  fill: white;
+  width: 2em;
+  margin-right: 3px;
+}
