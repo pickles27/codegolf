@@ -1,26 +1,20 @@
 import React from 'react';
-import { ReactComponent as SubmitIcon } from '../icons/submitIcon.svg';
-import { ReactComponent as HomeIcon } from '../icons/homeIcon.svg';
 import { useHistory } from 'react-router-dom';
-import { NavButton } from '../NavButton';
-import './NavBar.css';
+import Button from '@mui/material/Button';
+import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
+import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
 
 export const NavBar = () => {
     const { push } = useHistory();
 
-    const buttons = [{
-      id: 'home',
-      label: 'Home',
-      icon: <HomeIcon />,
-      onClick: () => push('/'),
-    }, {
-      id: 'submit',
-      label: 'Submit',
-      icon: <SubmitIcon />,
-      onClick: () => push('/submit'),
-    }];
-  return <div className="nav">
-      {buttons.map(button => <NavButton key={button.id} {...button} />)}
-    </div>
+  return <AppBar color="inherit" position="sticky" >
+    <Toolbar sx={{justifyContent: 'space-between'}}>
+      <Button color="inherit" startIcon={<BlurOnOutlinedIcon/>} onClick={() => push('/')}>make my code smaller</Button>
+      <Button color="inherit" startIcon={<AddCircleOutlineOutlinedIcon/>} onClick={() => push('/submit')}>Submit</Button>
+      <Button color="inherit">Profile</Button>
+    </Toolbar>
+  </AppBar>
 }
 
