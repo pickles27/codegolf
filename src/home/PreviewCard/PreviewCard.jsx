@@ -16,7 +16,14 @@ export const PreviewCard = ({ author, prompt, title }) => (
         height: "100%",
       }}
     >
-      <CardContent>
+      <CardContent
+        sx={{
+          height: "50%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         <Typography variant="h5" noWrap fontSize="20">
           {title}
         </Typography>
