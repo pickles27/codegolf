@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 export const PreviewCard = ({ author, prompt, title }) => (
-  <Card outlined sx={{ width: "18rem", height: "14rem", padding: "2rem" }}>
+  <Card sx={{ width: "18rem", height: "14rem", padding: "2rem" }}>
     <Box
       sx={{
         display: "flex",
