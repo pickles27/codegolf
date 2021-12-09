@@ -22,7 +22,7 @@ export const NavBar = () => {
         <Button
           color="inherit"
           startIcon={<AddCircleOutlineOutlinedIcon />}
-          onClick={() => push("/submit/1")}
+          onClick={() => push("/submit")}
         >
           Submit
         </Button>

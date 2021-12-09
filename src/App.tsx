@@ -9,7 +9,7 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route path="/submit/:id" component={SubmissionPage} />
+        <Route path="/submit/:id?" component={SubmissionPage} />
         <Route path="/" component={Home} />
       </Switch>
     </div>

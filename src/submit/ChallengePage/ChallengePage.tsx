@@ -1,5 +1,5 @@
 import React from "react";
 
-export function ChallengeInfo() {
+export function ChallengePage() {
   return <div>challengeeee</div>;
 }

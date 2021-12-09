@@ -1,14 +1,9 @@
 import React from "react";
-import { mockSubmissions } from "../../mockData";
-import { PreviewCard } from "../PreviewCard";
-import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import { ProblemsList } from "./ProblemsList";
 
 export const Home = () => (
-  <Grid container spacing="20" justifyContent="center" marginY="1rem">
-    {mockSubmissions.map((submission) => (
-      <Grid item key={submission._id}>
-        <PreviewCard {...submission} />
-      </Grid>
-    ))}
-  </Grid>
+  <Container>
+    <ProblemsList styles={{ marginTop: 3 }} />
+  </Container>
 );
