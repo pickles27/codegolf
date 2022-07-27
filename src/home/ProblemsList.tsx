@@ -1,17 +1,12 @@
-import { SxProps } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/system/Box";
 import React from "react";
-import { mockSubmissions } from "../../../mockData";
+import { mockSubmissions } from "../mockData";
 import { ProblemPreview } from "./ProblemPreview";
 
-interface ProblemsListProps {
-  styles: SxProps;
-}
-
-export function ProblemsList({ styles }: ProblemsListProps) {
+export function ProblemsList() {
   return (
-    <Box sx={styles}>
+    <Box>
       <Typography marginBottom={1} variant="h4">
         Problems
       </Typography>

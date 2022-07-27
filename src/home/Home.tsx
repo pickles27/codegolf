@@ -4,6 +4,6 @@ import { ProblemsList } from "./ProblemsList";
 
 export const Home = () => (
   <Container>
-    <ProblemsList styles={{ marginTop: 3 }} />
+    <ProblemsList />
   </Container>
 );

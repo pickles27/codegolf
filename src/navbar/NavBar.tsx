@@ -10,21 +10,21 @@ export const NavBar = () => {
   const { push } = useHistory();
 
   return (
-    <AppBar color="inherit" position="sticky">
+    <AppBar color="inherit" position="static">
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <Button
           color="inherit"
           startIcon={<BlurOnOutlinedIcon />}
           onClick={() => push("/")}
         >
-          make my code smaller
+          code golf
         </Button>
         <Button
           color="inherit"
           startIcon={<AddCircleOutlineOutlinedIcon />}
           onClick={() => push("/submit")}
         >
-          Submit
+          submit
         </Button>
         <Button color="inherit">Profile</Button>
       </Toolbar>
