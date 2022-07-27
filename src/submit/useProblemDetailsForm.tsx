@@ -6,25 +6,19 @@ export function useProblemDetailsForm() {
   const [prompt, setPrompt] = useState("");
   const { username } = useUserData();
 
-  const onChangeTitle = (e: ChangeEvent<HTMLInputElement>) => {
-    const newTitle = e.target.value;
-    if (newTitle !== null) {
-      setTitle(newTitle);
-    }
+  const changeTitle = (e: ChangeEvent<HTMLInputElement>) => {
+    setTitle(e.target.value);
   };
 
-  const onChangePrompt = (e: ChangeEvent<HTMLInputElement>) => {
-    const newPrompt = e.target.value;
-    if (newPrompt !== null) {
-      setPrompt(newPrompt);
-    }
+  const changePrompt = (e: ChangeEvent<HTMLInputElement>) => {
+    setPrompt(e.target.value);
   };
 
   return {
     title,
     prompt,
-    onChangePrompt,
-    onChangeTitle,
+    changePrompt,
+    changeTitle,
     username,
   };
 }

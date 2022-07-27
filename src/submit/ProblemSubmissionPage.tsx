@@ -7,15 +7,15 @@ import { ProblemDetailsForm } from "./ProblemDetailsForm";
 import { useProblemDetailsForm } from "./useProblemDetailsForm";
 
 export function ProblemSubmissionPage() {
-  const { title, onChangeTitle, prompt, onChangePrompt, username } =
+  const { title, changeTitle, prompt, changePrompt, username } =
     useProblemDetailsForm();
   return (
     <Box marginTop={1}>
       <Stack direction="row">
         <Box width="50vw" height="100vh">
           <ProblemDetailsForm
-            onChangeTitle={onChangeTitle}
-            onChangePrompt={onChangePrompt}
+            onChangeTitle={changeTitle}
+            onChangePrompt={changePrompt}
             prompt={prompt}
             title={title}
             username={username}
